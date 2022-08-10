@@ -1,0 +1,576 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+/*HEADER*/
+#header{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+   background: url("../img/header-image.jpeg");
+   background-position: 0px -500px;
+   color: white;
+}
+#header .wrap{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+   
+    width: 100%;
+    height: auto;
+}
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-gap: 10px;
+    justify-content: end; 
+    list-style: none;  
+}
+#menu ul li{
+    margin-left: 5px;
+    width: auto;
+    text-align: center;
+}
+#menu ul #violet{
+    background-color: rgb(238, 130, 238, 0.8);
+    transition: all 300ms;
+}
+#menu ul #purple{
+    background-color:rgba(95, 29, 104, 0.8);
+}
+#menu ul #purple-clear{
+    background-color: rgba(210, 99, 212, 0.8);
+}
+#menu ul li a{
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px gray;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 10px; 
+    line-height: 50px;    
+}
+#menu ul li a:hover{
+    text-shadow: 0px 0px 2px #ccc;
+}
+#menu ul #violet:hover{
+    background-color: rgb(238, 130, 238, 0.4);
+}
+#menu ul #purple:hover{
+    background-color: rgba(95, 29, 104, 0.4);
+}
+#menu ul #purple-clear:hover{
+    background-color: rgba(210, 99, 212, 0.4);
+}
+#social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: right;
+    align-self: center;
+
+    padding-right: 5px;
+    margin-left: 30px;
+}
+#social-media a img{
+    width: 30px;
+    padding: 3px;
+
+}
+#header .wrap2{
+    display: grid;
+    grid-template-columns:  1fr 2.5fr;
+    width: 100%;
+    height: 100px; 
+}
+.wrap2 #logo{
+    justify-self: left;
+}
+.wrap2 #info{
+    align-self: flex-end;
+    /*height: 20px;  just leave here*/
+}
+.wrap2 #info ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    justify-content: center;
+    list-style: none;
+}
+/*.wrap2 #info ul li{
+    
+}*/
+ #info ul li a{
+     letter-spacing: 1px;
+     font-size: 18px;
+     text-decoration: none;
+    color: white;
+}
+/*UNFOLDING MENU*/
+#info ul li .unfolding{
+    display: none;
+    position: absolute;
+    width: auto;
+    left: auto;
+    padding: 5px;
+    background-color: rgb(233, 214, 233);
+    border: 1px solid rgb(230, 74, 230);
+    box-shadow: 1px 1px 2px rgb(240, 200, 240);
+}
+#info .unfolding li{
+    margin-bottom: 5px;
+}
+#info .unfolding li a{
+    color: purple;
+}
+#info ul li:hover .unfolding{
+    display: block;
+}
+#info .unfolding li:hover{
+text-shadow: 1px 0px 0px purple;
+}
+
+/*BANNER*/
+#banner{
+    display: grid;
+    grid-template-row: repeat(3, 1fr);
+
+    width: 100%;
+    margin-top: 5%;
+    height: auto;
+}
+#banner h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 0px #444;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#banner .banner-info{
+    width: 50%;
+    height: 200px;
+    text-align: justify;
+    margin-left: 40px;
+    text-shadow: 1px 1px 0px #444;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+#banner #links-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 310px) repeat(3, 1fr);
+}
+#links-banner .link-info{
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+#links-banner .link-info a{
+    color: white;
+    text-shadow: 2px 0px 0px #444;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+#links-banner .link-info:hover{
+    border-bottom: 2px solid rgb(132, 21, 236);
+}
+/*Barra del busqueda*/
+#search{
+    width: 100%;
+    margin-top: 5%;
+    background-color: #991d87;
+    border: 1px solid black;
+}
+#search form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 200px;
+
+    margin: 15px;
+   text-align: center;
+}
+#search input[type=text]{
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+    height: 45px;
+    border: none;
+    margin-right: 15px;
+    background-color: #b765ae;
+}
+#search button{
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    border: none;
+    padding: 2px;
+    margin-right: 15px;
+    background-color: #491d66; 
+}
+#search button:hover{
+    background-color: black;
+    box-shadow: 1px 1px 2px black;
+}
+/*CONTENIDO DE LA PAGINA*/
+#content{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 65px;
+}
+#content .content1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+    margin: 0px auto;
+}
+.content1 h2{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 0px #333;
+    text-align: center;
+    margin-top: 170px;
+}
+.content1 p{
+    width: 80%;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 0px #333;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+#content .link-info{
+    margin: 0px auto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+#content .link-info a{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 0px #444;
+    text-decoration: none;
+}
+#content .link-info:hover a{
+    border-bottom: 3px solid rgb(132, 21, 236);
+}
+#content .register{
+    background: url("../img/coding.jpg");
+    background-position: -1707px -1736px;
+    height: 100%;
+    margin-left: 25px;
+}
+#content .services{
+    background: #571b77;
+    height: 100%;
+    margin-right: 25px;
+}
+#content .content2{
+     margin-top: 80px;
+     width: 100%;      
+}
+.content2 h2{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 0px #333;
+    text-align: center;
+    padding-top: 170px;
+}
+.content2 p{
+    width: 80%;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 0px #333;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+.content2 .about-us{
+    height: 100%;
+    background: url(../img/coding2.jpg);
+    background-position: 25px -378px;
+}
+.content3 #personal{
+    position: absolute;
+    top: 1960px;
+    left: 50px;
+    width: 30%;
+    padding: 30px;
+    padding-top: 50px;
+    background: #de146b;
+    color: white;
+}
+#personal #photo{
+    width:200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 999px 999px 999px 999px;
+    overflow: hidden;
+}
+#personal h2{
+    margin-top: 30px;
+}
+#personal h3{
+    margin-top: 40px;
+}
+#personal p{
+    margin-top: 40px;
+    width: 90%;
+}
+#personal a{
+    margin: 0px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#personal a #phone-number{
+    width: 230px;
+    border-bottom: 3px solid white;
+}
+#personal a > h2:last-child{
+    margin: 0px;
+}
+.content3 #recruter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 93%;
+    margin: 0px auto;
+    border-bottom: 5px solid #571b77;
+    
+}
+.content3 #recruter-info{
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 40%;
+}
+.content3 #recruter-info > h3{
+    margin-top: 30px;
+    color: purple;
+}
+.content3 #recruter-info > h2{
+    margin-top: 30px;
+    color: #de146b;
+    font-size: 30px;
+}
+.content3 #recruter-info > p{
+    width: 90%;
+    margin-top: 20px;
+}
+.content3 #recruter-info:last-child > p{
+     margin-bottom: 20px;
+}
+.content3 #recruter-info a{
+    color: #de146b;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 3px solid #de146b;
+    transition: all 300ms;
+}
+.content3 #recruter-info a:hover{
+    border-bottom: 3px solid #f0b5cf;
+}
+/*TARGETAS*/
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+    width: 93%;
+    margin: 0px auto;
+    height: 600px;
+    margin-top: 50px;
+}
+#cards .card{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.card img{
+    width: 100%;
+    height: 300px; 
+}
+.card .card-content{
+    height: 275px;
+    background: #9131cd;
+    height: auto;
+    padding-bottom: 15px;
+}
+.card-content h3{
+    color:white;
+    text-shadow: 1px 0px 1px #ccc;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+.card-content p{
+    color:white;
+    text-shadow: 1px 0px 1px #333;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.card-content > div{
+    text-align: center;
+    margin-top: 20px;
+}
+.card-content a{
+    color: white;
+    text-shadow: 1px 0px 1px #333;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.card-content a:hover{
+    border-bottom: 3px solid #571b77;
+}
+/*LINK BLOG*/
+#link{
+    height: 100px;
+}
+#blog-link{
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+}
+#blog-link a{
+    border-bottom: 1px solid #de146b;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #de146b;
+}
+#blog-link a:hover{
+    border-bottom: 1px solid #e26fa1;
+    text-shadow: 0px 0px 2px #ccc;
+}
+/*FOOTER*/
+footer{
+    display: grid;
+    grid-template-rows: 150px 50px 2fr 0.4fr;
+    width: 100%;
+    height: auto;
+    background-color: #9131c4;
+}
+#subscribe{
+    margin: 0px auto;
+    text-align: center;
+}
+#subscribe h2{
+    height: 100%;
+    padding: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+}
+#registrate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-gap: 10px;
+    height: 50px;
+    margin: 0px auto;
+    text-align: center;
+    width: 92%;
+}
+#registrate input{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+
+    background:#9e41cf;
+    border: 1px solid #9e41cf;
+    box-shadow: 1px 0px 2px #9a0de6 inset;
+}
+#registrate button{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    
+    background-color: #491d66;
+    border:none;
+}
+#registrate button:hover{
+    background-color: black;
+    box-shadow: 1px 1px 2px black;
+}
+#social-media2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding-right: 5px;
+}
+#social-media2 a img{
+    width: 30px;
+    padding: 3px;
+}
+#menu-footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+#menu-footer > div > h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#menu-footer > div > ul > li{
+    list-style: none;
+    margin-top: 10px;
+}
+#menu-footer > div > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#resources{
+    
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+#resources > div{
+    margin-top: 50px;
+}
+#services{
+    padding-top: 60px;
+    padding-left: 40px;
+}
+#new-staff{
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+#fields{
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+#location{
+    padding-top: 60px;
+    padding-left: 40px;
+}
+#copyright{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #de146b; 
+}
+#copyright a{
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+#copyright p{
+    color: white;
+    line-height: 50px;
+}
+

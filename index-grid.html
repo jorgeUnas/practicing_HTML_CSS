@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>Maquetación avanzada 5 flexbox</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="css/styles-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive-grid.css"/>
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <!--INICIO PRIMER ENVOLTORIO-->
+        <div class="wrap">
+            <nav id="menu">
+                <ul>
+                    <li id="purple"><a href="#">Contact US</a></li>
+                    <li id="violet"><a href="#">Register with us</a></li>
+                    <li id="purple-clear"><a href="#">Have a Vacancy</a></li>
+                    <li id="purple"><a href="#">Submit a Timesheet</a></li>
+                    <li id="violet"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div id="social-media">
+                <a href="#"><img src="img/ios.png" alt="ios" title="ios"/></a>
+                <a href="#"><img src="img/Opera_256x256.png" alt="opera" title="opera"/></a>
+                <a href="#"><img src="img/safari.png" alt="safari" title="safari"/></a>
+                <a href="#"><img src="img/chrome.png" alt="chrome" title="chrome"/></a>
+            </div>
+           
+        </div>
+         <!--FINAL PRIMER ENVOLTORIO-->
+        <br/>
+        <!--INICIO SEGUNDO ENVOLTORIO-->
+        <div class="wrap2">
+            <div id="logo">
+                <a href="#"><img src="img/logo.png" title="logo" alt="logo"/></a>
+            </div>
+            <nav id="info">
+                <ul>
+                    <li><a href="#">Find a Job</a></li>
+                    <li><a href="#">About Us</a>
+                       <ul class="unfolding">
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Work with Us</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#">Industry Expertise</a></li>
+                    <li><a href="#">Candidates</a>
+                        <ul class="unfolding">
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Register with Us</a></li>
+                            <li><a href="#">Advice</a></li>
+                            <li><a href="#">Contractors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Scientific Recruitment Services</a>
+                        <ul class="unfolding">
+                            <li><a href="#">Executive Research</a></li>
+                            <li><a href="#">Recruitment</a></li>
+                            <li><a href="#">Scientific Recruiment</a></li>
+                            <li><a href="#">Recruitment Staff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--FINAL SEGUNDO ENVOLTORIO-->
+
+
+        <!--INICIO BANNER-->
+        <div id="banner">
+            <h1>Wellcome everybody, this is my comercial website. Enjoy it.</h1>
+            <div class="banner-info">
+                <p>Let me explain in detail how this website was created. At the beginning I studied web development in Udemy. I
+                    had a formation in chemistry so my experience with coding was almost cero, except for a curse of
+                    physical-chemistry advance that I took during my undergrate degree, where I have to learn a little bit about
+                    programs.</p>
+            </div>
+            <div id="links-banner">
+                <div class="link-info">
+                    <a href="#">FIND OUT MORE INFORMATION</a>
+                </div>
+                <div class="link-info">
+                    <a href="#">VISIT OTHER RELATED SITES</a>
+                </div>
+            </div>
+        </div>
+        <!--FIN BANNER-->
+
+        <!--INICIO FORMULARIOS-->
+        <div id="search">
+            <form>
+                <datalist id="continentes">
+                    <option value="Africa"/>
+                    <option value="America"/>
+                    <option value="asia"/>
+                    <option value="Europa"/>
+                    <option value="Oceania"/>
+                </datalist>
+                <datalist id="industria">
+                    <option value="Informatic"/>
+                    <option value="Television"/>
+                    <option value="Telecomunications"/>
+                    <option value="Entertainment"/>
+                    <option value="Games"/>
+                </datalist>
+                <input type="text" list="continentes" placeholder="Select location"/>
+                <input type="text" list="industria" placeholder="Select Industry"/>
+                <button value="Search Jobs">Search Jobs</button>
+            </form>
+        </div>
+        <!--FIN FORMULARIOS-->
+    </header>
+    <!--END HEADER-->
+   
+<!--INICIO CONTENIDO-->
+    <section id="content">
+        <div class="content1">
+            <div class="register">
+                <h2>USER REGISTRATION</h2>
+                <p class="description">Registrate with us for assistance in all your present and future projects. We were glad to help you to boost your virtual bussiness or virtual platform.</p>
+                <div class="link-info">
+                <a href="#">Register here</a>
+                </div>
+            </div>
+            <div class="services">
+                <h2>SERVICE MENU</h2>
+                <p class="description">We are professinals working with high standars to offer you the best service. Our personal is proficient in the use of HTML-5, CSS-3, JavaScript, PHP and PYTHON.</p>
+                <div class="link-info">
+                    <a href="#">Discover more</a>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="content2">
+            <div class="about-us">
+                <h2>ABOUT US</h2>
+                <p class="description">We are a family of professionals that love the web development and always try to keep a good relationship with our clients. We work from home making possible the projects of our worldwide clients.</p>
+                <div class="link-info">
+                    <a href="#">Read More about us</a>
+                    </div>
+            </div>
+        </div>
+        <div class="content3">
+            <div id="personal">
+              <div id="photo">
+                <img src="img/photo.png" alt="Jorge Humberto" title="Foto de Jorge Humberto">
+              </div>
+                <h3>JORGE HUMBERTO UNAS DAZA, PhD</h3>
+                <h2>BACKGROUND</h2>
+                <p>I have experience as a laboratory assistant and professor. I have working with the chemical analysis  of diverse compounds using analytical techniques like HPLC, IR, UV-vis, Atomic Absorption Spectroscopy. I have worked with microorganisms to obtain valuable bio-compounds useful in soil remediation and oil spill. I am an expert  in the area of biomaterials for tissue regeneration. </p>
+                <a href="#">
+                    <div id="phone-number">
+                        <h2>Call Jorge Humberto</h2>
+                    </div>
+                        <h2>07949557197</h2>
+                </a>
+
+            </div>
+            <div id="recruter">
+            <div id="recruter-info">
+                <h3>BECOME PART OF OUR TEAM</h3>
+                <h2>SOFTWARE AND WEB DEVELOPERS</h2>
+                <p>Salary competitive</p>
+                <p>Location: London</p>
+                <h3> FULL-TIME OR PART-TIME</h3>
+                <p>Are you wanting to start your career as a software developer or are you an expert in the web development, we like to hear about you.</p>
+                <a href="#">KNOW MORE</a>
+            </div>
+            </div>
+        </div>
+    </section>
+<!--FINAL CONTENIDO-->
+ 
+<!--INICIO TARGETAS-->
+    <div id="cards">
+      <div class="card">
+            <div class="card-img"><img src="img/office.jpeg" alt="office" title="office" /></div>
+        <div class="card-content">
+            <h3>Excellent job environment</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. </p>
+            <div>
+                <a href="#">see details</a>
+            </div>
+        </div>
+       </div>
+        <div class="card">
+            <div class="card-img"><img src="img/family.jpeg" alt="office" title="office" /></div>
+        <div class="card-content">
+            <h3>our compromise is also with your family</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. </p>
+            <div>
+                <a href="#">see details</a>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="img/meditation.jpeg" alt="office" title="office"/></div>
+        <div class="card-content">
+            <h3>Your health is priority as well as your skills</h3>
+            <p>It is a long established fact that a reader will be distracted. </p>
+            <div>
+                <a href="#">see details</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--FIN TARGETAS-->
+    
+     <!--INICIO LINK-->
+     <section id="link">
+         <div id="blog-link">
+             <div>
+                 <a href="#">Go to my blog</a>
+             </div>
+         </div>
+     </section>
+    <!--FINAL LINK-->
+   <!--INICIO PIE DE PAGINA-->
+<footer>
+    <div id="subscribe">
+        <h2>Subscribe now</h2>
+    </div>
+    <div id="registrate">
+        <input type="email" placeholder="write your Email" />
+        <input type="password" placeholder="Password" />
+        <button value="submit">Submit</button>
+    </div>
+    <div id="menu-footer">
+        <div id="resources">
+            <h3>about us</h3>
+            <h3>Testimonials</h3>
+            <h3>find a job</h3>
+            <div id="social-media2">
+                <a href="#"><img src="img/ios.png" alt="ios" title="ios" /></a>
+                <a href="#"><img src="img/Opera_256x256.png" alt="opera" title="opera" /></a>
+                <a href="#"><img src="img/safari.png" alt="safari" title="safari" /></a>
+                <a href="#"><img src="img/chrome.png" alt="chrome" title="chrome" /></a>
+            </div>
+        </div>
+        <div id="services">
+            <h3>recruitment service</h3>
+            <ul>
+                <li><a href="#">recruitment service</a></li>
+                <li><a href="#">recruitment service and other</a></li>
+                <li><a href="#">recruitment service to diferent</a></li>
+                <li><a href="#">recruitment service</a></li>
+                <li><a href="#">recruitment service</a></li>
+            </ul>
+        </div>
+        <div id="new-staff">
+            <h3>candidates</h3>
+            <ul>
+                <li><a href="#">find a job</a></li>
+                <li><a href="#">Asses your habilities</a></li>
+                <li><a href="#">make a first contact</a></li>
+                <li><a href="#">receive advice</a></li>
+                <li><a href="#">come on</a></li>
+            </ul>
+        </div>
+        <div id="fields">
+            <h3>comercial expertise</h3>
+            <ul>
+                <li><a href="#">manager recruitment</a></li>
+                <li><a href="#">front-end recruitment</a></li>
+                <li><a href="#">back-end recruitment</a></li>
+                <li><a href="#">full-stack recruitment</a></li>
+                <li><a href="#">publicity recruitment</a></li>
+            </ul>
+
+        </div>
+        <div id="location">
+            <h3>Where are we</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.344041103255!2d-0.12722000939761316!3d51.49787677413586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1spt-BR!2ses!4v1645659373992!5m2!1spt-BR!2ses"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div id="copyright">
+        <a href="#">Privacy Policy</a>
+        <p>&copy all the rights reserved</p>
+
+    </div>
+</footer>
+
+    <!--FIN PIE DE PAGINA-->
+
+</body>
+
+</html>

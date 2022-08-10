@@ -1,0 +1,304 @@
+/*RESPONSIVE*/
+
+@media (max-width:1327px){
+    .content3 #personal{
+        position: absolute;
+        top: 2027px;
+    }
+}
+@media (max-width:1300px){
+    .content3 #personal{
+        position: absolute;
+        top: 2025px;
+    }
+}
+@media (max-width:1060px){
+    .content3 #personal{
+        position: absolute;
+        top: 2000px;
+    }
+    #header .wrap{
+        display: none;
+    }
+    .wrap2 #info{
+        display: none;
+    }
+    #banner{
+        margin-top: 1%;
+    }
+    #banner h1{
+        font-size: 33px;
+    }
+    #banner .banner-info{
+        font-size: 17px;
+        width: 90%;
+        height: auto;
+    }
+    #search input[type=text]{
+        height: 35px;
+        font-size: 15px;
+    }
+    #search button{
+        height: 40px;
+    }
+    #content .content1{
+        height: 550px;
+    }
+    .content1 h2{
+        font-size: 25px;
+    }
+    .content1 p{
+        font-size: 20px;
+    }
+    #content .link-info{
+        font-size: 18px;
+    }
+    #content .content2{
+         height: 450px;
+         margin-top: 50px;
+    }
+    .content2 h2{
+        font-size: 25px;
+        margin-top: 100px;
+    }
+    .content2 p{
+        font-size: 20px;
+    }
+    .content2 .about-us{
+        font-size: 18px;
+    }
+    .content3 #personal{
+        position: absolute;
+        top: 1552px;
+        height: 550px;
+        padding-top: 20px;
+    }
+    #personal #photo{
+        width:170px;
+        height: 170px;
+    }
+    #personal h2{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    #personal h3{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    #personal p{
+        margin-top: 20px;
+    }
+    #personal a{
+        font-size: 9px;
+    }
+    .content3 #recruter-info > h3{
+        margin-top: 20px;
+    }
+    .content3 #recruter-info > h2{
+        font-size: 30px;
+    }
+    .content3 #recruter-info a{
+        font-size: 18px;
+    }
+}
+@media (max-width:961px){
+    .content3 #personal{
+        position: absolute;
+        top: 1567px;    
+        height: 530px;
+    }
+    #personal #photo{
+        width:170px;
+        height: 170px;
+    }
+    #personal h2{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    #personal h3{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+@media (max-width:961px){
+    .content3 #personal{
+        position: absolute;
+        top: 1586px;    
+    }
+}
+@media (max-width:896px){
+    .content3 #personal{
+        position: absolute;
+        top: 1620px;    
+        height: 530px;
+    }
+}
+@media (max-width:814px){
+    .content3 #personal{
+        position: absolute;
+        top: 1620px;    
+        overflow: scroll;
+    }
+    .content3 #recruter{
+        margin-left: 70px;
+        width: auto;
+    }
+    .content3 #recruter-info > h3{
+        font-size: 15px;    }
+    .content3 #recruter-info > h2{
+        font-size: 20px;
+    }
+    .content3 #recruter-info a{
+        font-size: 18px;
+    }
+
+    #blog-link{
+        line-height: 70px;
+    }
+    #blog-link a{
+        font-size: 25px;
+    }
+
+    #registrate input{
+        font-size: 15px;
+        width: 35%;
+        height: 75%;
+        
+    }
+    #registrate button{
+        font-size: 15px;
+        height: 50px;
+        width: 10%;
+        margin-left: 10px;
+    }
+}
+@media (max-width:724px){  /* y targetas*/
+    .content3{
+        display: flex;
+        flex-flow: column wrap;
+        flex-grow: 1;
+        height: auto;
+    }
+    .content3 #personal{
+        height: auto;
+        position: relative;
+        top: 180px;
+        left: 0px;
+        margin: 0px auto;
+        width: 80%;
+    }
+    .content3 #recruter{
+        justify-content: center;
+        margin-right: 40px;
+    }
+    .content3 #recruter-info{
+        flex-basis: 80%;  
+    }
+    #cards{
+        display: flex;
+        flex-flow: column wrap;
+        width: 70%;
+        height: auto;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+    #cards .card{
+        flex-grow: 1;
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .card img{
+        flex-grow: 1;
+        width: 100%;
+        height: 300px; 
+    }
+    .card .card-content{
+        flex-grow: 1;
+        height: 275px;
+        background: #9131cd;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .card-content h3{
+        color:white;
+        text-shadow: 1px 0px 1px #ccc;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 20px;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .card-content p{
+        color:white;
+        text-shadow: 1px 0px 1px #333;
+        font-size: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    .card-content > div{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .card-content a{
+        color: white;
+        text-shadow: 1px 0px 1px #333;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .card-content a:hover{
+        border-bottom: 3px solid #571b77;
+    }
+}
+@media (max-width:620px){
+    #registrate input{
+        flex-basis: 30%;
+        height: 100%;
+        margin-left: 25px;
+    }
+    #registrate button{
+        flex-basis: 10%;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 60px;
+    }
+}
+@media (max-width:540px){
+    #search form{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 15px;
+    }
+    #search input[type=text]{
+        flex-grow: 3;
+        margin-bottom: 10px;
+    }
+    #search button{
+        flex-grow: 1; 
+    }
+    #registrate{
+        flex-flow: column wrap;
+        height: auto;
+    }
+    #registrate input{
+        flex-grow: 1;
+        width: 80%;
+        height: auto;
+        margin-top: 5px;
+    }
+    #registrate button{
+        flex-grow: 1;
+        font-size: 20px;
+       align-self: center;
+        margin-top: 5px;
+        width: 30%;
+        height: auto;
+    }
+}
+
+/*Aprendizado, los elementos con posicion absoluta pueden ser cambiados a posición relativa
+y colocados dentro de un div flex durante el responsive, solo que debe tener en cuenta manipular el top y el left.
+ los inputs y botones pueden pasar de un 
+flex-flow: row wrap; a un flex-flow column wrap para que se vean mejor en pantalla pequena*/

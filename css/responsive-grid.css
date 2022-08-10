@@ -1,0 +1,224 @@
+
+@media (max-width:1324px){
+    .content3{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        margin: 0px auto;
+        margin-top: 100px;
+    }
+    .content3 #personal{
+        position: inherit;
+        margin: 0px auto;
+        width: 80%;
+        border: 1px solid greenyellow;
+    }
+    .content3 #recruter{
+        border: 1px solid greenyellow;
+    }
+    .content3 #recruter-info{
+        margin-left: 30px;
+}
+@media (max-width:1300px){
+    #location{
+        padding-left: 20px;
+    }
+    footer{
+        height: 550px;
+    }
+}
+@media (max-width:1141px){
+    footer{
+        height: auto;
+    }
+    #header .wrap{
+        display: none;
+    }
+    .wrap2 #info{
+        display: none;
+    }
+    #banner{
+        margin-top: 1%;
+    }
+    #banner h1{
+        font-size: 33px;
+    }
+    #banner .banner-info{
+        font-size: 17px;
+        width: 90%;
+        height: auto;
+    }
+    #search input[type=text]{
+        height: 35px;
+        font-size: 15px;
+    }
+    #search button{
+        height: 40px;
+    }
+    #content{
+        height: 1800px;
+    }
+    #content .content1{
+        height: 550px;
+        
+    }
+    .content1 h2{
+        font-size: 25px;
+    }
+    .content1 p{
+        font-size: 20px;
+    }
+    #content .link-info{
+        font-size: 18px;
+    }
+    #content .content2{
+        height: 400px;
+        width: 98%;
+         margin: 0px auto;
+         margin-top: 50px;
+         border: 2px solid green;
+    }
+    .content2 h2{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    .content2 p{
+        font-size: 20px;
+    }
+    .content2 .about-us{
+        font-size: 18px;
+    }
+    .content3{
+        margin-top: 30px;
+    }
+    .content3 #personal{
+        margin-left: 20px;
+    }
+    #new-staff{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    #fields{
+        padding-left: 20px;
+    }
+}
+@media (max-width:1050px){
+    footer{
+        height: 850px;
+    }
+    #menu-footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width:896px){ /*ya puedo hacer el grid-template-row para content3*/
+    .content3{
+        display: grid;
+        grid-template-rows: 350px 400px;
+        grid-template-columns: 1fr;
+    }
+    .content3{
+        margin-top: 0px;
+    }
+    .content3 #personal{
+        overflow: scroll;
+        margin: 0px auto;
+        padding-top: 10px;
+    }
+    #personal h2{
+        margin-top: 10px;
+    }
+    #personal h3{
+        margin-top: 10px;
+    }
+    #personal p{
+        margin-top: 10px;
+        width: 95%;  
+    }
+    #personal #photo{
+        width:180px;
+        height: 180px;  
+    }
+    .content3 #recruter-info{
+        margin-top: 10px;
+        margin-left: 5%;
+    }
+    #cards{
+        display: grid;
+        grid-template-row: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 3%;
+        margin: 0px auto;
+        height: auto;
+        width: 70%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:790px){  /* Hacer mas responsive los inputs*/
+    #content{
+        min-height: 2300px; /*importante revisar la altura de los principales contenedores para que no se superpongan los elementos*/
+    }
+    #search form{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 7px;
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+    }
+    #content .content1{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(2, 500px);
+        grid-gap: 20px;
+        justify-content: center;
+        height: auto;
+       
+    }
+    #content .register{
+        
+        margin-left: 0px;
+    }
+    #content .services{
+        margin-right: 0px;
+    }
+    #content .content2{
+        margin-bottom: 40px;       
+   }
+   footer{                /*tuve que redefinir los tamanos de las filas aqui*/
+    display: grid;
+    grid-template-rows: 100px 100px 2fr 0.4fr;
+    width: 100%;
+    height: auto;
+    background-color: #9131c4;
+}
+   #registrate{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 7px;
+    width: 92%;
+    min-height: 120px;
+    margin-top: 10px;
+    border: 1px solid goldenrod;
+}
+#registrate input{
+    height: 30px;
+}
+#registrate button{
+    height: 30px;
+}
+}
+/*Acomode el footer*/
+@media (max-width:620px){
+}
+@media (max-width:540px){
+    
+}
+
+/* El justify-content es como el float en este caso
+   al definir fr recuerde usar también px y porcentajes 
+   cuidado de no definir dos vezes las alturas, en el grid-template y en cada selector
+   position: inherit; hace que el elemento con position absolute tome su posicion no absoluta
+
+*/
